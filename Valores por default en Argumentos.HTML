@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valores por default en argumentos</title>
+    <script>
+    //ES5
+        function multiplicar(a, b) {
+          b = typeof b !== 'undefinded' ? b : 1;
+          return a*b;
+        }
+
+        //console.log(multiplicar(5));
+
+        function multiplicar(a, b = 2) {
+            return a*b;
+        }
+
+        console.log(multiplicar(12)); 
+    </script>
+</head>
+<body>
+
+</body>
+</html>
