@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valores por default en argumentos | Funciones</title>
+    <script>
+    function llamarAlgo(cosa = algo()) {return cosa;}
+
+    function algo(){
+        return Math.floor(Math.random());
+    }
+    console.log(llamarAlgo()*10);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
