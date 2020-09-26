@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valores por default en argumentos | Tpos primitivos | Colores </title>
+    <script>
+    function cambiaFondo(elemento, color = 'yellow'){
+        var cuadro = document.getElementById(elemento)
+        cuadro.style.backgroundColor = color;
+    }
+    window.onload = function(){
+    cambiaFondo("cuadro");
+    }
+
+</script>
+<style>
+    #cuadro{
+        width:100px;
+        height:100px;
+        border:20px solid black;
+    }
+</style>
+</head>
+<body>
+<div id="cuadro"></div>
+</body>
+</html>

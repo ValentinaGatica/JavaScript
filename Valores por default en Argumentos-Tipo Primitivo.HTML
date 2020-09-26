@@ -3,7 +3,10 @@
 <head>
     <title>Valores por default en argumentos | Tpos primitivos</title>
     <script>
-
+    function f (x, y = 7, z = 42){
+        return x + y + z
+    }
+    console.log(f(1));
     </script>
 </head>
 <body>
