@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symbol</title>
+    <script>
+        const COLOR_RED = Symbol('Red');
+        const COLOR_ORANGE = Symbol('Orange');
+        const COLOR_YELLOW = Symbol('Yellow');
+        const COLOR_GREEN = Symbol('Green');
+        const COLOR_VIOLET = Symbol('Violet');
+
+        function complemento(color) {
+            switch (color) {
+                case COLOR_RED:
+                    return COLOR_GREEN;
+                case COLOR_ORANGE:
+                    return COLOR_BLUE;
+                case COLOR_YELLOW:
+                    return COLOR_VIOLET;
+                default:
+                    throw new Exception('Unknown color: '+color);
+            }
+        }
+        console.log(complemento(COLOR_RED));
+    </script>
+</head>
+</html>
